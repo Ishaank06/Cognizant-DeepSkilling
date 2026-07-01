@@ -1,44 +1,31 @@
-# Cognizant Deep Skilling - Week 1
+# Cognizant Deep Skilling
 
-This repository contains the exercises completed for Week 1, focusing on core software design principles, foundational data structures/algorithms, and PL/SQL programming.
+This repository contains the exercises completed for the Cognizant Deep Skilling program.
 
 ## Directory Structure
 
-```
+```text
 .
 ├── .gitignore
 ├── README.md
-└── week1/
-    ├── design_principles/
-    │   ├── SingletonPatternExample/      # Thread-safe logging utility using double-checked locking
-    │   └── FactoryMethodPatternExample/  # Loose-coupled document creation framework
-    ├── data_structures/
-    │   ├── EcommerceSearchPlatform/      # Linear vs. Binary search implementation & analysis
-    │   └── FinancialForecasting/         # Recursive vs. Iterative financial forecasting & analysis
-    └── pl_sql/
-        ├── control_structures.sql        # Control structures (loops, cursors, conditionals)
-        ├── stored_procedures.sql         # Stored procedures (modular transactions)
-        └── README.md                     # PL/SQL environment execution guide
+├── week1/                    # Week 1 Exercises: Design Principles, Data Structures, PL/SQL
+└── week2/                    # Week 2 Exercises: Spring Core and Maven
 ```
 
-## Exercises Summary
+---
 
-### 1. Design Principles - Singleton Pattern
-- **Folder**: `week1/design_principles/SingletonPatternExample`
-- **Focus**: Implemented a thread-safe `Logger` using double-checked locking to ensure only a single instance exists. Verification includes multi-threaded test access.
+## Weekly Guides
 
-### 2. Design Principles - Factory Method Pattern
-- **Folder**: `week1/design_principles/FactoryMethodPatternExample`
-- **Focus**: Developed a Document Management system utilizing the Factory Method Pattern. Decouples the client from concrete implementations (`WordDocument`, `PdfDocument`, `ExcelDocument`).
+### [Week 1](file:///Users/ishaankapoor/Desktop/Cognizant-DeepSkilling/week1)
+*   **Design Principles**: Singleton and Factory Method Patterns.
+*   **Data Structures**: E-commerce search lookup analysis, recursive/iterative/memoized Financial Forecasting.
+*   **PL/SQL**: Control structures, cursors, loops, and stored procedures transaction processing.
+*   *For a detailed overview of Week 1, check the individual directory subfolders.*
 
-### 3. Data Structures - E-commerce Search Function
-- **Folder**: `week1/data_structures/EcommerceSearchPlatform`
-- **Focus**: Created Product lookups via Linear and Binary Search. Includes an analysis of asymptotic complexities (Big O, best/average/worst-case scenarios) and performance benchmarking.
+### [Week 2](file:///Users/ishaankapoor/Desktop/Cognizant-DeepSkilling/week2)
+*   **Spring Core and Maven**:
+    *   **Exercise 1**: Basic Spring XML bean configuration.
+    *   **Exercise 2**: Loose-coupling via Setter Dependency Injection.
+    *   **Exercise 4**: Maven build system config with Java 1.8 compatibility, Spring Context, AOP, and WebMVC dependencies.
+*   *For details and execution guides, see the [Week 2 README](file:///Users/ishaankapoor/Desktop/Cognizant-DeepSkilling/week2/README.md).*
 
-### 4. Data Structures - Financial Forecasting
-- **Folder**: `week1/data_structures/FinancialForecasting`
-- **Focus**: Modeled compound investment growth using recursive algorithms, analyzed recursion limits (call stack space bounds), and implemented optimized iterative and memoized solutions.
-
-### 5. PL/SQL - Control Structures & Stored Procedures
-- **Folder**: `week1/pl_sql`
-- **Focus**: Developed database scripts for business logic rules (age-based discounts, VIP status promotion, loan due date cursor reminders) and reusable transaction procedures (savings interest processing, employee bonuses, and validated funds transfer).
