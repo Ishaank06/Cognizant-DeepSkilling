@@ -53,6 +53,21 @@ week2/
         │   └── service/BookService.java       # BookService logic
         └── test/java/com/example/bookstore/
             └── service/BookServiceTest.java   # Unit tests using JUnit 5 & Mockito
+    
+├── Spring Data JPA with Spring Boot, Hibernate/  # JPA vs Hibernate comparison
+    ├── 1. spring-data-jpa-handson.md  # Detailed exercise documentation
+    ├── pom.xml                        # Spring Boot + JPA configuration
+    └── src/
+        └── main/
+            ├── java/com/example/employee/
+            │   ├── EmployeeManagementApplication.java # Spring Boot Runner
+            │   ├── model/Employee.java                # JPA Entity
+            │   ├── repository/EmployeeRepository.java # JpaRepository
+            │   └── service/
+            │       ├── EmployeeService.java           # Spring Data JPA service
+            │       └── HibernateEmployeeService.java  # Boilerplate Hibernate Service
+            └── resources/
+                └── application.properties             # Database properties
 ```
 
 ---
@@ -104,3 +119,21 @@ week2/
     ```bash
     mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean test
     ```
+
+---
+
+### 3. Spring Data JPA with Spring Boot, Hibernate
+
+#### Hands-on: Comparing Hibernate and Spring Data JPA
+*   **Focus**: Understanding the differences between JPA (specification), Hibernate (ORM implementation), and Spring Data JPA (repository abstraction layer).
+*   **Wired State**: Demonstrates native Hibernate session/transaction boilerplate compared side-by-side with Spring Data JPA declarative repositories.
+*   **How to Run**:
+    ```bash
+    cd "week2/Spring Data JPA with Spring Boot, Hibernate"
+    mvn compile spring-boot:run
+    ```
+    *(For restricted network environments bypassing SSL checks)*:
+    ```bash
+    mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true compile spring-boot:run
+    ```
+
