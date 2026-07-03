@@ -9,7 +9,7 @@ This repository contains the exercises completed for the Cognizant Deep Skilling
 ├── .gitignore
 ├── README.md
 ├── week1/                    # Week 1 Exercises: Design Principles, Data Structures, PL/SQL
-└── week2/                    # Week 2 Exercises: Spring Core and Maven
+└── week2/                    # Week 2 Exercises: Unit Testing and TDD
 ```
 
 ---
@@ -27,5 +27,7 @@ This repository contains the exercises completed for the Cognizant Deep Skilling
     *   **Exercise 1**: Basic Spring XML bean configuration.
     *   **Exercise 2**: Loose-coupling via Setter Dependency Injection.
     *   **Exercise 4**: Maven build system config with Java 1.8 compatibility, Spring Context, AOP, and WebMVC dependencies.
+*   **Unit Testing and TDD (JUnit 5 & Mockito)**:
+    *   **Exercise 1**: Setting up JUnit 5 and Mockito in a Maven Java project, and writing unit tests using the AAA (Arrange-Act-Assert) pattern.
 *   *For details and execution guides, see the [Week 2 README](file:///Users/ishaankapoor/Desktop/Cognizant-DeepSkilling/week2/README.md).*
 
