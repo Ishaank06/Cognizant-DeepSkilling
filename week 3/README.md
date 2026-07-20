@@ -11,7 +11,12 @@ A complete Spring Boot Web REST API application built with Maven, Spring Data JP
 
 ```text
 week 3/
-├── pom.xml                                    # Maven Build Configuration
+├── spring-learn/                              # Spring Web Learn Project
+│   ├── pom.xml                                # spring-learn Dependencies
+│   ├── README.md                              # Detailed spring-learn documentation
+│   └── src/                                   # Source files (com.cognizant.springlearn)
+│
+├── pom.xml                                    # Employee Management pom.xml
 ├── schema.sql                                 # MySQL database table definitions
 ├── data.sql                                   # MySQL sample records insert statements
 ├── README.md                                  # This documentation
@@ -128,3 +133,17 @@ mvn spring-boot:run
 ```bash
 mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true spring-boot:run
 ```
+
+---
+
+## `spring-learn` Project
+
+This subfolder contains the `com.cognizant:spring-learn` Maven project built to learn Spring Web and DevTools startup logging.
+
+- **Path**: [spring-learn/](file:///Users/ishaankapoor/Desktop/Cognizant-DeepSkilling/week%203/spring-learn)
+- **Log verification**: Prints starting logs inside its `main` method using SLF4J.
+- **Run command**:
+  ```bash
+  cd "week 3/spring-learn"
+  mvn spring-boot:run
+  ```
