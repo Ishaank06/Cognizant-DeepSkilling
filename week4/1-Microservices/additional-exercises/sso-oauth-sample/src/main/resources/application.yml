@@ -1,0 +1,18 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: sso-oauth-sample
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: dummy-client-id
+            client-secret: dummy-client-secret
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+jwt:
+  secret: 4f36c533bb273ff3411b9dc84c2f82c40c11bb3ebafbebe3c200e57ab8e9206d
+  expiration: 1200000
