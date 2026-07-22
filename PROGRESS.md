@@ -25,3 +25,12 @@
 ## Phase 4: Week 5
 - [x] React: Generated 19 standalone apps covering SPA fundamentals, components, state, props, router, forms, Context API, fetching, and Jest testing.
 - [x] Angular: Scaffolded the Student Course Portal demonstrating components, routing, and standard layout architecture.
+
+## Week 6
+- [x] 6.1 CI/CD Fundamentals (concepts written up)
+- [x] 6.2.1 Backend CI — spring-learn build & test workflow
+- [x] 6.2.2 Backend — JaCoCo coverage gate
+- [x] 6.2.3 Backend — SonarCloud / Checkstyle+SpotBugs quality gate
+- [x] 6.2.4 Backend — matrix build across all microservices
+- [x] 6.2.5 Backend — branch protection & required status checks
+- [x] 6.2.6 Backend — tag-triggered release with published jar

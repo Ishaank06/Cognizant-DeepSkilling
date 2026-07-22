@@ -1,0 +1,25 @@
+name: Microservices CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        service: [account, loan, eureka-discovery-server, greet-service, api-gateway]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+      - name: Build and test ${{ matrix.service }}
+        working-directory: week4/1-Microservices/account-loan-eureka-gateway/${{ matrix.service }}
+        run: mvn -B clean verify
