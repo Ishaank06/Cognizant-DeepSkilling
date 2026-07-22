@@ -1,30 +1,25 @@
 package com.example.singleton;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 public class Logger {
-    private static volatile Logger instance;
 
+    // Private static instance
+    private static Logger instance;
+
+    // Private constructor
     private Logger() {
-        if (instance != null) {
-            throw new IllegalStateException("Logger instance already created.");
-        }
+        System.out.println("Logger Instance Created");
     }
 
+    // Public method to get the single instance
     public static Logger getInstance() {
         if (instance == null) {
-            synchronized (Logger.class) {
-                if (instance == null) {
-                    instance = new Logger();
-                }
-            }
+            instance = new Logger();
         }
         return instance;
     }
 
+    // Logging method
     public void log(String message) {
-        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
-        System.out.println("[" + timestamp + "] [INFO] " + message);
+        System.out.println("LOG: " + message);
     }
 }
